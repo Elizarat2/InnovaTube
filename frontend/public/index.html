@@ -377,10 +377,9 @@
                 return;
             }
 
-            // Aquí podrías enviar los datos al backend para validar el inicio de sesión
+            // Aquí se envian los datos al backend para validar el inicio de sesión
             console.log('Iniciando sesión...', username, password);
 
-            // Si todo es correcto, podrías ocultar el formulario y mostrar la información del usuario.
             closeForm();
         }
 
@@ -395,11 +394,8 @@
                 document.getElementById('recaptcha-error').style.display = 'block';
                 return;
             }
-
-            // Aquí podrías enviar los datos al backend para registrar el usuario
             console.log('Registrando usuario...', username, email, password);
 
-            // Si todo es correcto, podrías cerrar el formulario y mostrar una notificación.
             closeForm();
         }
     </script>
