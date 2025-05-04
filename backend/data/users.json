@@ -1,0 +1,14 @@
+[
+    {
+      "username": "usuario1",
+      "email": "usuario1@example.com",
+      "password": "$2a$10$EjemploDeHashBcrypt123",
+      "favorites": []
+    },
+    {
+      "username": "usuario2",
+      "email": "usuario2@example.com",
+      "password": "$2a$10$EjemploDeHashBcrypt456",
+      "favorites": ["dQw4w9WgXcQ"]
+    }
+  ]

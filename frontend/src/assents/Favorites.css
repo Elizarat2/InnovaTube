@@ -1,0 +1,36 @@
+.favorites-page {
+    padding: 2rem;
+    max-inline-size: 1200px;
+    margin: 0 auto;
+  }
+  
+  .favorites-page h1 {
+    color: #333;
+    margin-block-end: 2rem;
+  }
+  
+  .no-favorites {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-block-start: 3rem;
+  }
+  
+  .favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #d32f2f;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }

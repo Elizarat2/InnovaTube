@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-block-size: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    background: #ff0000;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logout-btn {
+    background: white;
+    color: #ff0000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-inline-size: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex: 1;
+  }
+  
+  /* Pestañas */
+  .tabs {
+    display: flex;
+    margin-block-end: 20px;
+    gap: 5px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    background: #c51616;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background: rgb(102, 93, 93);
+    font-weight: bold;
+  }
+  
+  /* Búsqueda */
+  .search-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-block-end: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-section button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Grid de videos */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-thumbnail {
+    inline-size: 100%;
+    block-size: 180px;
+    background-color: #eee;
+  }
+  
+  .video-thumbnail img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+  
+  .video-info {
+    padding: 15px;
+  }
+  
+  .video-info h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  
+  /* Botones de favoritos */
+  .add-fav, .remove-fav {
+    inline-size: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-fav {
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  .remove-fav {
+    background: #ffebee;
+    color: #d32f2f;
+  }
+  
+  /* Estados */
+  .loading, .no-results {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+  }
